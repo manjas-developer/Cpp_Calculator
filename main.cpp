@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-  int num1;
-  int num2;
+  double num1;
+  double num2;
   int operation;
   cout << "Enter the first number: ";
   cin >> num1;
@@ -20,6 +20,9 @@ int main(){
     cout << num1 << " * " << num2 << " = " << num1*num2 << endl;
   }
   else if(operation == 4){
+    if(b == 0){
+      cout << "Sorry! Division by zero is not allowed!"
+    }
     cout << num1 << " / " << num2 << " = " << num1/num2 << endl;
   }
   else if(operation == 5){
